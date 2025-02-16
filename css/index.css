@@ -1,0 +1,216 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+section {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+h2 {
+    margin-top: 0;
+
+    text-align: center;
+}
+
+p {
+    margin-bottom: 20px;
+
+    text-align: center;
+}
+
+.parrafo {
+    text-align: left;
+}
+
+
+@media only screen and (max-width: 768px) {
+    main {
+        padding: 10px;
+    }
+
+    section {
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 18px;
+    }
+
+    section {
+        padding: 5px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    header {
+        padding: 5px;
+    }
+
+    header h1 {
+        font-size: 16px;
+    }
+
+    section {
+        padding: 5px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+}
+
+.button-with-icon {
+    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #0f988e;
+    font-family: "Istok Web", sans-serif;
+    letter-spacing: 1px;
+    padding: 0 12px;
+    text-align: center;
+    width: 120px;
+    height: 40px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: normal;
+    border-radius: 3px;
+    outline: none;
+    user-select: none;
+    cursor: pointer;
+    transform: translateY(0px);
+    position: relative;
+    box-shadow:
+        inset 0 30px 30px -15px rgba(255, 255, 255, 0.1),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.3),
+        inset 0 1px 20px rgba(0, 0, 0, 0),
+        0 3px 0 #0f988e,
+        0 3px 2px rgba(0, 0, 0, 0.2),
+        0 5px 10px rgba(0, 0, 0, 0.1),
+        0 10px 20px rgba(0, 0, 0, 0.1);
+    background: #15ccbe;
+    color: white;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+    transition: 150ms all ease-in-out;
+}
+
+.button-with-icon .icon {
+    margin-right: 8px;
+    width: 24px;
+    height: 24px;
+    transition: all 0.5s ease-in-out;
+}
+
+.button-with-icon:active {
+    transform: translateY(3px);
+    box-shadow:
+        inset 0 16px 2px -15px rgba(0, 0, 0, 0),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.15),
+        inset 0 1px 20px rgba(0, 0, 0, 0.1),
+        0 0 0 #0f988e,
+        0 0 0 2px rgba(255, 255, 255, 0.5),
+        0 0 0 rgba(0, 0, 0, 0),
+        0 0 0 rgba(0, 0, 0, 0);
+}
+
+.button-with-icon:hover .text {
+    transform: translateX(80px);
+}
+
+.button-with-icon:hover .icon {
+    transform: translate(23px);
+}
+
+.text {
+    transition: all 0.5s ease-in-out;
+}
+
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.cards .red {
+    background-color: #f43f5e;
+}
+
+.cards .blue {
+    background-color: #3b82f6;
+}
+
+.cards .green {
+    background-color: #22c55e;
+}
+
+.cards .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 100;
+    width: 250px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 400ms;
+}
+
+.cards .card p.tip {
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.cards .card p.second-text {
+    font-size: .7em;
+}
+
+.cards .card:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.cards:hover>.card:not(:hover) {
+    filter: blur(10px);
+    transform: scale(0.9, 0.9);
+}

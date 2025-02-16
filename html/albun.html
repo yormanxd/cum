@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/albun.css">
+    <title>Álbum de Fotos para mi mejor amiga</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #ff69b4;
+        }
+
+        .album {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .foto {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .foto:hover {
+            transform: scale(1.05);
+        }
+
+        .foto img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .foto .descripcion {
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Álbum de Fotos (Que me encontre)</h1>
+    <div class="album">
+        <div class="foto">
+            <img src="/img/bff/WhatsApp Image 2025-02-16 at 6.01.25 PM (1).jpeg" alt="Foto 1">
+            <div class="descripcion"></div>
+        </div>
+        <div class="foto">
+            <img src="/img/bff/WhatsApp Image 2025-02-16 at 6.01.25 PM (2).jpeg" alt="Foto 2"
+                style="width: 100%; height: auto; object-fit: contain;">
+            <div class="descripcion"></div>
+        </div>
+        <div class="foto">
+            <img src="/img/bff/WhatsApp Image 2025-02-16 at 6.01.25 PM.jpeg" alt="Foto 3"
+                style="width: 100%; height: auto; object-fit: contain;">
+            <div class="descripcion"></div>
+        </div>
+
+        <div class="foto">
+            <img src="/img/bff/WhatsApp Image 2025-02-16 at 6.01.26 PM (1).jpeg" alt="Foto 4"
+                style="width: 100%; height: auto; object-fit: contain;">
+            <div class="descripcion"></div>
+        </div>
+        <div class="foto">
+            <img src="/img/bff/WhatsApp Image 2025-02-16 at 6.01.26 PM (2).jpeg" alt="Foto 5"
+                style="width: 100%; height: auto; object-fit: contain;">
+            <div class="descripcion"></div>
+        </div>
+        <div class="foto">
+            <img src="/img/bff/WhatsApp Image 2025-02-16 at 6.01.26 PM (3).jpeg" alt="Foto 6"
+                style="width: 100%; height: auto; object-fit: contain;">
+            <div class="descripcion"></div>
+        </div>
+        <div class="foto">
+            <img src="/img/bff/WhatsApp Image 2025-02-16 at 6.01.26 PM.jpeg" alt="Foto 7"
+                style="width: 100%; height: auto; object-fit: contain;">
+            <div class="descripcion"></div>
+        </div>
+        <div class="foto">
+            <img src="/img/bff/WhatsApp Image 2025-02-16 at 6.01.27 PM (1).jpeg" alt="Foto 8"
+                style="width: 100%; height: auto; object-fit: contain;">
+            <div class="descripcion"></div>
+        </div>
+        <div class="foto">
+            <img src="/img/bff/WhatsApp Image 2025-02-16 at 6.01.27 PM (2).jpeg" alt="Foto 9"
+                style="width: 100%; height: auto; object-fit: contain;">
+            <div class="descripcion"></div>
+        </div>
+        <div class="foto">
+            <img src="/img/bff/WhatsApp Image 2025-02-16 at 6.01.27 PM (3).jpeg" alt="Foto 10">
+            <div class="descripcion"></div>
+        </div>
+        <div class="foto">
+            <img src="/img/bff/WhatsApp Image 2025-02-16 at 6.01.27 PM (4).jpeg" alt="Foto 11">
+            <div class="descripcion"></div>
+        </div>
+        <div class="foto">
+            <img src="/img/bff/WhatsApp Image 2025-02-16 at 6.01.27 PM (5).jpeg" alt="Foto 12"
+                style="width: 100%; height: auto; object-fit: contain;">
+            <div class="descripcion"></div>
+        </div>
+        <div class="foto">
+            <img src="/img/bff/WhatsApp Image 2025-02-16 at 6.01.27 PM.jpeg" alt="Foto 13">
+            <div class="descripcion">
+            </div>
+        </div>
+    </div>
+
+
+
+    <h5>Preciona aca para volver a la pagina anterior</h5>
+    <a href="../html/despedida.html">
+        <button>
+            <span> Atras </span>
+        </button>
+    </a>
+</body>
+
+</html>

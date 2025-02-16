@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/albun.css">
+    <title>Mi Carta Especial</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:wght@300;400&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .carta {
+            background-color: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            max-width: 350px;
+            width: 100%;
+            position: relative;
+        }
+
+        .encabezado {
+            background: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+            padding: 30px 20px;
+            text-align: center;
+            color: #ffffff;
+            font-family: 'Dancing Script', cursive;
+            font-size: 2.5em;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .encabezado::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 70%);
+            transform: rotate(45deg);
+            animation: brillar 4s linear infinite;
+        }
+
+        @keyframes brillar {
+            0% {
+                transform: rotate(45deg) translateY(-100%);
+            }
+
+            100% {
+                transform: rotate(45deg) translateY(100%);
+            }
+        }
+
+        .contenido {
+            padding: 30px 20px;
+            text-align: justify;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .firma {
+            text-align: right;
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.5em;
+            margin-top: 20px;
+            color: #ff9a9e;
+        }
+
+        .corazon {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            font-size: 2em;
+            color: #ff9a9e;
+            animation: latir 1s ease-in-out infinite;
+        }
+
+        @keyframes latir {
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.1);
+            }
+        }
+
+        .sello {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            width: 60px;
+            height: 60px;
+            background-color: #fad0c4;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Dancing Script', cursive;
+            font-size: 0.8em;
+            color: #ffffff;
+            transform: rotate(-15deg);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="carta">
+        <div class="encabezado">
+            Para Ti
+        </div>
+        <div class="contenido">
+            <p>Querida pitufa racista 7u7 :3</p>
+            <p>
+                Eres esa persona que siempre está ahí,
+con tus locuras que me hacen reír. 😆
+Tus ojos reflejan la chispa de la vida,
+y tu risa es de las mejores cosas compartidas.
+            </p>
+            <p>
+                Tu voz siempre anima cualquier momento,
+y tu compañía vale más que el tiempo. ⏳
+Cada instante contigo es un desparche total,
+porque contigo, todo es más especial.
+
+No hay palabras que puedan explicar,
+lo mucho que vales y lo que das. 💕
+Así que sigue siendo como eres,
+porque el mundo necesita más gente así de chévere. 😎
+
+
+            </p>
+            <div class="firma">con afecto forzado (por crear tantas pagina a los pendejo, pero igual es divertido.),<br>yorman 😋 </div>
+        </div>
+        <div class="corazon">😝</div>
+        <!-- <div class="sello">Sello de Amor</div> -->
+
+    </div>
+
+
+</body>
+
+</html>

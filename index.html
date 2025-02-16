@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botones Bonitos</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fef7e0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            opacity: 1;
+            transition: opacity 0.5s ease;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-align: center;
+            color: #ff6f61;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        h3::before,
+        h3::after {
+            content: "🎉";
+            font-size: 2rem;
+            margin: 0 10px;
+        }
+
+        .botones {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 80%;
+            max-width: 300px;
+            padding: 15px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border-radius: 30px;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-cumple {
+            background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+            color: #ffffff;
+            position: relative;
+        }
+
+        .btn-cumple::before {
+            content: "🎉";
+            font-size: 1.5rem;
+            position: absolute;
+            top: -15px;
+            left: -15px;
+        }
+
+        .btn-cumple::after {
+            content: "🎂";
+            font-size: 1.5rem;
+            position: absolute;
+            top: -15px;
+            right: -15px;
+        }
+
+        .btn-carta {
+            background: linear-gradient(45deg, #84fab0, #8fd3f4);
+            color: #ffffff;
+            position: relative;
+        }
+
+        .btn-carta::before {
+            content: "😝";
+            font-size: 1.5rem;
+            position: absolute;
+            top: -15px;
+            left: -15px;
+        }
+
+        .btn-carta::after {
+            content: "📜";
+            font-size: 1.5rem;
+            position: absolute;
+            top: -15px;
+            right: -15px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Presiona primero el botón de "Feliz Cumpleaños" y luego el de "Carta".</h3>
+    <div class="botones" id="botones">
+        <button class="btn btn-cumple" onclick="cumpleanos()">Feliz Cumpleaños</button>
+        <button class="btn btn-carta" onclick="carta()">Carta</button>
+    </div>
+
+    <script>
+        function cumpleanos() {
+            document.body.style.opacity = "0";
+            setTimeout(() => {
+                window.location.href = "../html/feliz.html";
+            }, 500);
+        }
+
+        function carta() {
+            document.body.style.opacity = "0";
+            setTimeout(() => {
+                window.location.href = "../html/despedida.html";
+            }, 500);
+        }
+    </script>
+</body>
+
+</html>
