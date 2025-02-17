@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Feliz Cumpleaños con Hello Kitty!</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Varela Round', sans-serif;
+            background-color: #fce4ec;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: #ffffff;
+            border-radius: 30px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            text-align: center;
+            max-width: 90%;
+            width: 400px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .ribbon {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            width: 150px;
+            height: 150px;
+            overflow: hidden;
+        }
+
+        .ribbon::before,
+        .ribbon::after {
+            position: absolute;
+            z-index: -1;
+            content: '';
+            display: block;
+            border: 5px solid #ff69b4;
+            border-top-color: transparent;
+            border-right-color: transparent;
+        }
+
+        .ribbon::before {
+            top: 0;
+            left: 0;
+        }
+
+        .ribbon::after {
+            bottom: 0;
+            right: 0;
+        }
+
+        .ribbon span {
+            position: absolute;
+            display: block;
+            width: 225px;
+            padding: 15px 0;
+            background-color: #ff69b4;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+            color: #fff;
+            font-size: 17px;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+            text-transform: uppercase;
+            text-align: center;
+            left: -25px;
+            top: 30px;
+            transform: rotate(45deg);
+        }
+
+        h1 {
+            color: #ff69b4;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .kitty-image {
+            width: 100%;
+            max-width: 250px;
+            height: auto;
+            margin: 20px auto;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .message {
+            font-size: 1.2em;
+            color: #333;
+            margin: 20px 0;
+            line-height: 1.6;
+        }
+
+        .cake {
+            font-size: 4em;
+            margin: 20px 0;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        .confetti {
+            position: fixed;
+            width: 10px;
+            height: 10px;
+            background-color: #ff69b4;
+            animation: confetti-fall 5s linear infinite;
+        }
+
+        .confetti:nth-child(2n) {
+            background-color: #87CEFA;
+        }
+
+        .confetti:nth-child(3n) {
+            background-color: #98FB98;
+        }
+
+        .confetti:nth-child(4n) {
+            background-color: #DDA0DD;
+        }
+
+        @keyframes confetti-fall {
+            0% {
+                transform: translateY(-100vh) rotate(0deg);
+            }
+
+            100% {
+                transform: translateY(100vh) rotate(360deg);
+            }
+        }
+
+        .balloon {
+            position: absolute;
+            width: 50px;
+            height: 60px;
+            border-radius: 50%;
+            animation: float-balloon 6s ease-in-out infinite;
+        }
+
+        .balloon::before {
+            content: '';
+            position: absolute;
+            width: 2px;
+            height: 80px;
+            background-color: #fff;
+            bottom: -80px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .balloon:nth-child(1) {
+            background-color: #ff69b4;
+            left: 10%;
+            top: 20%;
+            animation-delay: 0s;
+        }
+
+        .balloon:nth-child(2) {
+            background-color: #87CEFA;
+            right: 10%;
+            top: 30%;
+            animation-delay: 1s;
+        }
+
+        .balloon:nth-child(3) {
+            background-color: #98FB98;
+            left: 20%;
+            bottom: 20%;
+            animation-delay: 2s;
+        }
+
+        @keyframes float-balloon {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="ribbon"><span>Feliz Cumpleaños</span></div>
+        <h1>¡Feliz Cumpleaños!</h1>
+        <img src="https://d2bzx2vuetkzse.cloudfront.net/fit-in/0x450/images_without_background/7dc8b893-2bef-437a-a4f3-ac7e72732465.png"
+            alt="Hello Kitty" class="kitty-image">
+        <p class="message">
+            Hola, mi racista favorita! 💖
+            En este día tan especial, quiero felicitarte de todo corazón. ¡Feliz cumpleaños, mi peliona! 🎉✨
+                <br>
+                Doy gracias a la vida por tenerte a mi lado, por cada risa compartida y por todos los momentos inolvidables que hemos vivido juntas. ¡Eres increíble! 💕
+
+
+                <br>
+                ¡Muchas felicidades, mi enana favorita! 🥳🎂<br>
+                No cambies nunca. <br>
+                Feliz Cumpleaños! 🎈🎁❤️
+        </p>
+        <div class="cake">🎂</div>
+    </div>
+    <!-- <div class="balloon"></div>
+    <div class="balloon"></div>
+    <div class="balloon"></div> -->
+    <div class="confetti" style="left: 10%; animation-delay: 0s;"></div>
+    <div class="confetti" style="left: 20%; animation-delay: 1s;"></div>
+    <div class="confetti" style="left: 30%; animation-delay: 2s;"></div>
+    <div class="confetti" style="left: 40%; animation-delay: 3s;"></div>
+    <div class="confetti" style="left: 50%; animation-delay: 4s;"></div>
+    <div class="confetti" style="left: 60%; animation-delay: 0.5s;"></div>
+    <div class="confetti" style="left: 70%; animation-delay: 1.5s;"></div>
+    <div class="confetti" style="left: 80%; animation-delay: 2.5s;"></div>
+    <div class="confetti" style="left: 90%; animation-delay: 3.5s;"></div>
+</body>
+
+</html>
